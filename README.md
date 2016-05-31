@@ -40,8 +40,8 @@ Before you can build, select an active target with your preferred build option.
 
 Available targets:
 
-* `Sass [options]` — compile style-sheet (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd>)
-* `SCSS [options]` — compile style-sheet (<kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>B</kbd>)
+* `Sass [options]`
+* `SCSS [options]`
 
 ### Shortcuts
 
