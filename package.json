@@ -1,0 +1,43 @@
+{
+  "name": "build-sass",
+  "version": "0.0.0",
+  "description": "Atom Build provider for sass, compiles Sass/SCSS",
+  "repository": "https://github.com/idleberg/atom-build-sass",
+  "license": "MIT",
+  "keywords": [
+    "build",
+    "compile",
+    "sass",
+    "scss",
+    "css",
+    "linter",
+    "lint"
+  ],
+  "main": "lib/provider.js",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "providedServices": {
+    "builder": {
+      "description": "Compiles Sass/SCSS",
+      "versions": {
+        "2.0.0": "provideBuilder"
+      }
+    }
+  },
+  "devDependencies": {
+    "babel-eslint": "^6.0.4",
+    "eslint": "^2.10.2",
+    "eslint-config-atom-build": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-coffeelint": "^0.6.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-jshint": "^2.0.1",
+    "gulp-jsonlint": "^1.1.2",
+    "gulp-recess": "^1.2.0",
+    "jshint": "^2.9.2"
+  },
+  "scripts": {
+    "test": "gulp lint"
+  }
+}
