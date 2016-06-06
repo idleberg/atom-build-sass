@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^6.0.4",
-    "eslint": "^2.10.2",
+    "eslint": "^2.11.1",
     "eslint-config-atom-build": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-coffeelint": "^0.6.0",
