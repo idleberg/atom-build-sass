@@ -6,7 +6,7 @@
 [![Travis](https://img.shields.io/travis/idleberg/atom-build-sass.svg?style=flat-square)](https://travis-ci.org/idleberg/atom-build-sass)
 [![David](https://img.shields.io/david/dev/idleberg/atom-build-sass.svg?style=flat-square)](https://david-dm.org/idleberg/atom-build-sass#info=dependencies)
 
-[Atom Build](https://atombuild.github.io/) provider for `sass`, compiles Sass/SCSS into CSS. Supports the [linter](https://atom.io/packages/linter) package with a set of error patterns.
+[Atom Build](https://atombuild.github.io/) provider for `sass`, compiles Sass/SCSS into CSS. Supports the [linter](https://atom.io/packages/linter) package for error highlighting.
 
 ## Installation
 
@@ -30,7 +30,9 @@ $ cd ~/.atom/packages/
 
 Clone repository as `build-sass`:
 
-`$ git clone https://github.com/idleberg/atom-build-sass build-sass`
+```bash
+$ git clone https://github.com/idleberg/atom-build-sass build-sass
+```
 
 ## Usage
 
