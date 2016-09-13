@@ -11,6 +11,10 @@
 
 If you prefer LibSass, take note of the separate [build-sassc](https://atom.io/packages/build-sassc) package. When in doubt, consult the [Sass Compatibility](http://sass-compatibility.github.io/) chart.
 
+![Screenshot](https://raw.githubusercontent.com/idleberg/atom-build-sass/master/screenshot.png)
+
+*See the linter in action*
+
 ## Installation
 
 ### apm
