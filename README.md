@@ -9,7 +9,7 @@
 
 [Atom Build](https://atombuild.github.io/) provider for `sass`, compiles Sass/SCSS into CSS. Supports the [linter](https://atom.io/packages/linter) package for error highlighting.
 
-If you prefer LibSass, take note of the separate [build-sassc](https://atom.io/packages/build-sassc) package. Consult this [comparison chart](http://sass-compatibility.github.io/) for details.
+If you prefer LibSass, take note of the separate [build-sassc](https://atom.io/packages/build-sassc) package. When in doubt, consult this [comparison chart](http://sass-compatibility.github.io/) .
 
 ## Installation
 
