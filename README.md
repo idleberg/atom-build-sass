@@ -41,6 +41,13 @@ Clone repository as `build-sass`:
 $ git clone https://github.com/idleberg/atom-build-sass build-sass
 ```
 
+Install Node dependencies:
+
+```bash
+cd build-sass
+npm install
+```
+
 ## Usage
 
 ### Build
