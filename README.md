@@ -45,7 +45,7 @@ Install Node dependencies:
 
 ```bash
 $ cd build-sass
-$ npm install
+$ yarn || npm install
 ```
 
 ## Usage
