@@ -23,7 +23,7 @@ Install `build-sass` from Atom's [Package Manager](http://flight-manual.atom.io/
 
 `$ apm install build-sass`
 
-### GitHub
+### Using Git
 
 Change to your Atom packages directory:
 
