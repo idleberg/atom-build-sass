@@ -55,9 +55,9 @@ Before you can build, select an active target with your preferred build option.
 
 Available targets:
 
-* `Sass [compact|compressed|expanded]`
+* `Sass [compact|compressed|expanded|user]`
 * `Watch Sass [compact|compressed|expanded]`
-* `SCSS [compact|compressed|expanded]`
+* `SCSS [compact|compressed|expanded|user]`
 * `Watch SCSS [compact|compressed|expanded]`
 
 ### Shortcuts
