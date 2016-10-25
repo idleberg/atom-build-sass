@@ -4,7 +4,7 @@
 [![apm](https://img.shields.io/apm/v/build-sass.svg?style=flat-square)](https://atom.io/packages/build-sass)
 [![apm](https://img.shields.io/apm/dm/build-sass.svg?style=flat-square)](https://atom.io/packages/build-sass)
 [![Travis](https://img.shields.io/travis/idleberg/atom-build-sass.svg?style=flat-square)](https://travis-ci.org/idleberg/atom-build-sass)
-[![David](https://img.shields.io/david/idleberg/atom-build-sass.svg?style=flat-square)](https://david-dm.org/idleberg/atom-build-sass#info=dependencies)
+[![David](https://img.shields.io/david/idleberg/atom-build-sass.svg?style=flat-square)](https://david-dm.org/idleberg/atom-build-sass)
 [![David](https://img.shields.io/david/dev/idleberg/atom-build-sass.svg?style=flat-square)](https://david-dm.org/idleberg/atom-build-sass?type=dev)
 
 [Atom Build](https://atombuild.github.io/) provider for `sass`, compiles Sass/SCSS into CSS. Supports the [linter](https://atom.io/packages/linter) package for error highlighting.
