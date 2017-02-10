@@ -1,6 +1,6 @@
 {
   "name": "build-sass",
-  "version": "0.8.1",
+  "version": "0.9.0",
   "description": "Atom Build provider for sass, compiles Sass/SCSS",
   "repository": "https://github.com/idleberg/atom-build-sass",
   "license": "MIT",
