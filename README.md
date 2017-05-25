@@ -7,7 +7,7 @@
 [![David](https://img.shields.io/david/idleberg/atom-build-sass.svg?style=flat-square)](https://david-dm.org/idleberg/atom-build-sass)
 [![David](https://img.shields.io/david/dev/idleberg/atom-build-sass.svg?style=flat-square)](https://david-dm.org/idleberg/atom-build-sass?type=dev)
 
-[Atom Build](https://atombuild.github.io/) provider for `sass`, compiles Sass/SCSS into CSS. Supports the [linter](https://atom.io/packages/linter) package for error highlighting.
+[Atom Build](https://atombuild.github.io/) provider for `sass`, compiles SCSS (and Sass) into CSS. Supports the [linter](https://atom.io/packages/linter) package for error highlighting.
 
 If you prefer LibSass, take note of the separate [build-sassc](https://atom.io/packages/build-sassc) package. When in doubt, consult the [Sass Compatibility](http://sass-compatibility.github.io/) chart.
 
