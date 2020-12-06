@@ -41,10 +41,10 @@ export function provideBuilder() {
 
     settings() {
       const errorMatch = [
-        '(?<message>Error: .*)\\n\\s+on line (?<line>\\d+) of (?<file>.*)\\n',
+        '(?<message>Error: .*)\\n\\s+on line (?<line>\\d+) of (?<file>.*)\\n'
       ];
 
-      const pathToSass = getConfig('pathToSass');
+      const pathToSass = getConfig('pathToSass') || 'sass';
       const customSassArguments = getConfig('customSassArguments')
         .trim()
         .split(' ');
@@ -60,7 +60,7 @@ export function provideBuilder() {
           cwd: '{FILE_ACTIVE_PATH}',
           sh: false,
           atomCommandName: 'SCSS:compile',
-          errorMatch: errorMatch,
+          errorMatch: errorMatch
         },
         {
           name: 'SCSS (compact)',
@@ -70,12 +70,12 @@ export function provideBuilder() {
             '--style',
             'compact',
             '{FILE_ACTIVE}',
-            '{FILE_ACTIVE_NAME_BASE}.css',
+            '{FILE_ACTIVE_NAME_BASE}.css'
           ],
           cwd: '{FILE_ACTIVE_PATH}',
           sh: false,
           atomCommandName: 'SCSS:compile-compact',
-          errorMatch: errorMatch,
+          errorMatch: errorMatch
         },
         {
           name: 'SCSS (compressed)',
@@ -85,12 +85,12 @@ export function provideBuilder() {
             '--style',
             'compressed',
             '{FILE_ACTIVE}',
-            '{FILE_ACTIVE_NAME_BASE}.min.css',
+            '{FILE_ACTIVE_NAME_BASE}.min.css'
           ],
           cwd: '{FILE_ACTIVE_PATH}',
           sh: false,
           atomCommandName: 'SCSS:compile-compressed',
-          errorMatch: errorMatch,
+          errorMatch: errorMatch
         },
         {
           name: 'SCSS (expanded)',
@@ -100,12 +100,12 @@ export function provideBuilder() {
             '--style',
             'expanded',
             '{FILE_ACTIVE}',
-            '{FILE_ACTIVE_NAME_BASE}.css',
+            '{FILE_ACTIVE_NAME_BASE}.css'
           ],
           cwd: '{FILE_ACTIVE_PATH}',
           sh: false,
           atomCommandName: 'SCSS:compile-expanded',
-          errorMatch: errorMatch,
+          errorMatch: errorMatch
         },
         {
           name: 'SCSS (user)',
@@ -114,7 +114,7 @@ export function provideBuilder() {
           cwd: '{FILE_ACTIVE_PATH}',
           sh: false,
           atomCommandName: 'SCSS:compile-with-user-settings',
-          errorMatch: errorMatch,
+          errorMatch: errorMatch
         },
         {
           name: 'Watch SCSS',
@@ -122,12 +122,12 @@ export function provideBuilder() {
           args: [
             '--scss',
             '--watch',
-            '{FILE_ACTIVE}:{FILE_ACTIVE_NAME_BASE}.css',
+            '{FILE_ACTIVE}:{FILE_ACTIVE_NAME_BASE}.css'
           ],
           cwd: '{FILE_ACTIVE_PATH}',
           sh: false,
           atomCommandName: 'SCSS:watch-and-compile',
-          errorMatch: errorMatch,
+          errorMatch: errorMatch
         },
         {
           name: 'Watch SCSS (compact)',
@@ -137,12 +137,12 @@ export function provideBuilder() {
             '--style',
             'compact',
             '--watch',
-            '{FILE_ACTIVE}:{FILE_ACTIVE_NAME_BASE}.css',
+            '{FILE_ACTIVE}:{FILE_ACTIVE_NAME_BASE}.css'
           ],
           cwd: '{FILE_ACTIVE_PATH}',
           sh: false,
           atomCommandName: 'SCSS:watch-and-compile-compact',
-          errorMatch: errorMatch,
+          errorMatch: errorMatch
         },
         {
           name: 'Watch SCSS (compressed)',
@@ -152,12 +152,12 @@ export function provideBuilder() {
             '--style',
             'compressed',
             '--watch',
-            '{FILE_ACTIVE}:{FILE_ACTIVE_NAME_BASE}.min.css',
+            '{FILE_ACTIVE}:{FILE_ACTIVE_NAME_BASE}.min.css'
           ],
           cwd: '{FILE_ACTIVE_PATH}',
           sh: false,
           atomCommandName: 'SCSS:watch-and-compile-compressed',
-          errorMatch: errorMatch,
+          errorMatch: errorMatch
         },
         {
           name: 'Watch SCSS (expanded)',
@@ -167,12 +167,12 @@ export function provideBuilder() {
             '--style',
             'expanded',
             '--watch',
-            '{FILE_ACTIVE}:{FILE_ACTIVE_NAME_BASE}.css',
+            '{FILE_ACTIVE}:{FILE_ACTIVE_NAME_BASE}.css'
           ],
           cwd: '{FILE_ACTIVE_PATH}',
           sh: false,
           atomCommandName: 'SCSS:watch-and-compile-expanded',
-          errorMatch: errorMatch,
+          errorMatch: errorMatch
         },
         {
           name: 'Sass',
@@ -181,7 +181,7 @@ export function provideBuilder() {
           cwd: '{FILE_ACTIVE_PATH}',
           sh: false,
           atomCommandName: 'sass:compile',
-          errorMatch: errorMatch,
+          errorMatch: errorMatch
         },
         {
           name: 'Sass (compact)',
@@ -190,12 +190,12 @@ export function provideBuilder() {
             '--style',
             'compact',
             '{FILE_ACTIVE}',
-            '{FILE_ACTIVE_NAME_BASE}.css',
+            '{FILE_ACTIVE_NAME_BASE}.css'
           ],
           cwd: '{FILE_ACTIVE_PATH}',
           sh: false,
           atomCommandName: 'sass:compile-compact',
-          errorMatch: errorMatch,
+          errorMatch: errorMatch
         },
         {
           name: 'Sass (compressed)',
@@ -204,12 +204,12 @@ export function provideBuilder() {
             '--style',
             'compressed',
             '{FILE_ACTIVE}',
-            '{FILE_ACTIVE_NAME_BASE}.min.css',
+            '{FILE_ACTIVE_NAME_BASE}.min.css'
           ],
           cwd: '{FILE_ACTIVE_PATH}',
           sh: false,
           atomCommandName: 'sass:compile-compressed',
-          errorMatch: errorMatch,
+          errorMatch: errorMatch
         },
         {
           name: 'Sass (expanded)',
@@ -218,12 +218,12 @@ export function provideBuilder() {
             '--style',
             'expanded',
             '{FILE_ACTIVE}',
-            '{FILE_ACTIVE_NAME_BASE}.css',
+            '{FILE_ACTIVE_NAME_BASE}.css'
           ],
           cwd: '{FILE_ACTIVE_PATH}',
           sh: false,
           atomCommandName: 'sass:compile-expanded',
-          errorMatch: errorMatch,
+          errorMatch: errorMatch
         },
         {
           name: 'Sass (user)',
@@ -232,7 +232,7 @@ export function provideBuilder() {
           cwd: '{FILE_ACTIVE_PATH}',
           sh: false,
           atomCommandName: 'sass:compile-with-user-settings',
-          errorMatch: errorMatch,
+          errorMatch: errorMatch
         },
         {
           name: 'Watch Sass',
@@ -241,7 +241,7 @@ export function provideBuilder() {
           cwd: '{FILE_ACTIVE_PATH}',
           sh: false,
           atomCommandName: 'sass:watch-and-compile',
-          errorMatch: errorMatch,
+          errorMatch: errorMatch
         },
         {
           name: 'Watch Sass (compact)',
@@ -250,12 +250,12 @@ export function provideBuilder() {
             '--style',
             'compact',
             '--watch',
-            '{FILE_ACTIVE}:{FILE_ACTIVE_NAME_BASE}.css',
+            '{FILE_ACTIVE}:{FILE_ACTIVE_NAME_BASE}.css'
           ],
           cwd: '{FILE_ACTIVE_PATH}',
           sh: false,
           atomCommandName: 'sass:watch-and-compile-compact',
-          errorMatch: errorMatch,
+          errorMatch: errorMatch
         },
         {
           name: 'Watch Sass (compressed)',
@@ -264,12 +264,12 @@ export function provideBuilder() {
             '--style',
             'compressed',
             '--watch',
-            '{FILE_ACTIVE}:{FILE_ACTIVE_NAME_BASE}.min.css',
+            '{FILE_ACTIVE}:{FILE_ACTIVE_NAME_BASE}.min.css'
           ],
           cwd: '{FILE_ACTIVE_PATH}',
           sh: false,
           atomCommandName: 'sass:watch-and-compile-compressed',
-          errorMatch: errorMatch,
+          errorMatch: errorMatch
         },
         {
           name: 'Watch Sass (expanded)',
@@ -278,13 +278,13 @@ export function provideBuilder() {
             '--style',
             'expanded',
             '--watch',
-            '{FILE_ACTIVE}:{FILE_ACTIVE_NAME_BASE}.css',
+            '{FILE_ACTIVE}:{FILE_ACTIVE_NAME_BASE}.css'
           ],
           cwd: '{FILE_ACTIVE_PATH}',
           sh: false,
           atomCommandName: 'sass:watch-and-compile-expanded',
-          errorMatch: errorMatch,
-        },
+          errorMatch: errorMatch
+        }
       ];
     }
   };
