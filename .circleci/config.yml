@@ -18,6 +18,9 @@ commands:
       - run:
           name: Lint Source
           command: npm run test
+      - run:
+          name: Build Source
+          command: npm run build
 
 jobs:
   node-latest:
@@ -35,6 +38,6 @@ jobs:
 workflows:
   node-run-tests:
     jobs:
-      - node-latest
-      - node-lts
+    - node-latest
+    - node-lts
   version: 2
